@@ -1,0 +1,357 @@
+/* Seletor universal: zera margin e padding de todos os elementos (Aula 08 - box-sizing) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seletor tipo: estiliza o elemento body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+/* ── CLASSES UTILITÁRIAS (span com classes - Aula 05) ── */
+.vermelho {
+  color: #e50914;
+}
+.branco {
+  color: #ffffff;
+}
+
+/* ── HEADER ── */
+/* Seletor tipo: estiliza o elemento semântico header */
+header {
+  background-color: #1a1a1a;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e50914;
+}
+
+header h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ── NAV + UL + LI (Aulas sobre nav, ul, li) ── */
+/* Seletor descendente: estiliza o ul dentro do nav dentro do header */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #e50914;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+header nav ul li a:hover {
+  background-color: #b20710;
+  text-decoration: underline;
+}
+
+/* Seletor de classe: estiliza o link ativo no menu */
+header nav ul li a.ativo {
+  background-color: #b20710;
+  text-decoration: underline;
+}
+
+/* ── MAIN ── */
+/* Seletor tipo: estiliza o elemento semântico main */
+main {
+  padding: 30px 40px;
+}
+
+/* ── TÍTULO DA PÁGINA ── */
+.titulo-pagina {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 42px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* ── ARTICLE: seção principal de contato ── */
+/* Seletor tipo: estiliza o elemento semântico article */
+article.secao-contato {
+  margin-bottom: 50px;
+}
+
+/* ── ASIDE: informações de contato (coluna lateral) ── */
+/* Seletor tipo: estiliza o elemento semântico aside */
+aside.info {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+aside.info:hover {
+  border-color: #e50914;
+}
+
+.info-titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.info-desc {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ── HR: separador visual (Aula 05 - elemento hr) ── */
+hr {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin: 16px 0;
+}
+
+/* ── UL + LI: lista de itens de contato (Aula sobre ul, li) ── */
+/* Seletor de classe: remove marcadores da lista de contato */
+ul.lista-contato {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.lista-contato li.info-item {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+/* span: elemento inline para o ícone (Aula 05 - elemento span) */
+.info-icone {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.info-texto {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* b: elemento inline para destaque visual (Aula 05 - elemento b) */
+.info-texto b {
+  color: #e50914;
+  font-size: 12px;
+}
+
+.info-valor {
+  color: #888888;
+  font-size: 14px;
+}
+
+/* ── UL + LI: lista de redes sociais ── */
+ul.redes {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+ul.redes li {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.btn-rede {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 6px;
+  color: #888888;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-rede:hover {
+  border-color: #e50914;
+  color: #e50914;
+}
+
+/* ── FORMULÁRIO ── */
+/* Seletor de classe: estiliza o container do formulário */
+.formulario {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+}
+
+.formulario:hover {
+  border-color: #e50914;
+}
+
+.form-titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.form-desc {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+/* Seletor de classe: espaçamento de cada grupo label+input */
+.form-grupo {
+  margin-bottom: 16px;
+}
+
+/* Seletor descendente: estiliza labels dentro de form-grupo */
+.form-grupo label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888888;
+}
+
+/* Agrupamento de seletores: mesma estilização para input, select e textarea (Aula 07) */
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  width: 100%;
+  background-color: #0d0d0d;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px 12px;
+  margin-top: 6px;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  border-color: #e50914;
+  outline: none;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #e50914;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.btn-enviar:hover {
+  background-color: #b20710;
+}
+
+/* ── FAQ ── */
+/* Seletor de classe: estiliza a seção de perguntas frequentes */
+.faq {
+  background-color: #111111;
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.faq-titulo {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* ol + li: lista ordenada para as perguntas (Aula sobre ol) */
+ol.faq-lista {
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+ol.faq-lista li.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2a2a2a;
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* strong: forte ênfase semântica nas perguntas (Aula 05 - elemento strong) */
+.faq-item strong {
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* em: ênfase em palavras específicas (Aula 05 - elemento em) */
+.faq-item em {
+  color: #e50914;
+}
+
+/* ── IFRAME: mapa externo incorporado (Aula sobre iframe) ── */
+/* Seletor de classe: container do mapa */
+.mapa {
+  margin-bottom: 40px;
+}
+
+.mapa-titulo {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Seletor tipo: estiliza o elemento iframe */
+iframe {
+  border: 2px solid #e50914;
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+}
+
+/* ── FOOTER ── */
+/* Seletor tipo: estiliza o elemento semântico footer */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #e50914;
+  line-height: 2;
+}
+
+/* small: texto menor para copyright (Aula 05 - elemento small) */
+footer small {
+  color: #888888;
+  font-size: 12px;
+}

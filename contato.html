@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css" />
+  </head>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <body>
+    <!-- HEADER: elemento semântico que marca o cabeçalho da página -->
+    <header>
+      <h1>
+        <span class="vermelho">POWER</span><span class="branco">FIT</span>
+      </h1>
+
+      <!-- NAV: elemento semântico que marca a área de navegação -->
+      <nav>
+        <!-- ul + li: lista não ordenada para os itens do menu -->
+        <ul class="menu">
+          <li><a href="treinos.html">Treinos</a></li>
+          <li><a href="Nutrição.html">Nutrição</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+          <li><a href="index.html">Início</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN: elemento semântico que marca o conteúdo principal da página -->
+    <main>
+      <h2 class="titulo-pagina">CONTATO</h2>
+
+      <!-- ARTICLE: marca um conteúdo independente e completo da página -->
+      <article class="secao-contato">
+        <!-- ASIDE: marca conteúdo lateral relacionado ao conteúdo principal -->
+        <aside class="info">
+          <h3 class="info-titulo">Estamos aqui para ajudar</h3>
+
+          <p class="info-desc">
+            Seja para tirar uma dúvida sobre treino, sugerir um conteúdo ou
+            propor uma parceria — nossa equipe responde em até 24 horas.
+          </p>
+
+          <hr />
+
+          <!-- ul + li: lista não ordenada dos itens de contato -->
+          <ul class="lista-contato">
+            <li class="info-item">
+              <span class="info-icone">&#128231;</span>
+              <div class="info-texto">
+                <p><b>E-mail</b></p>
+                <p class="info-valor">006513@ibertas.edu.br</p>
+              </div>
+            </li>
+            <li class="info-item">
+              <span class="info-icone">&#128205;</span>
+              <div class="info-texto">
+                <p><b>Localização</b></p>
+                <p class="info-valor">São Sebastião do Paraíso, MG</p>
+              </div>
+            </li>
+            <li class="info-item">
+              <span class="info-icone">&#9200;</span>
+              <div class="info-texto">
+                <p><b>Resposta em</b></p>
+                <p class="info-valor">Até 24 horas úteis</p>
+              </div>
+            </li>
+          </ul>
+
+          <hr />
+
+          <p><b>Redes Sociais</b></p>
+
+          <!-- ul + li: lista não ordenada para os botões de redes sociais -->
+          <ul class="redes">
+            <li>
+              <a
+                href="https://www.instagram.com/power_fitmg?igsh=MWdxeWFwMzdmbzhkOA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-rede"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="#" class="btn-rede">YouTube</a></li>
+            <li><a href="#" class="btn-rede">TikTok</a></li>
+          </ul>
+        </aside>
+
+        <!-- DIV: container sem valor semântico agrupando o formulário -->
+        <div class="formulario">
+          <h3 class="form-titulo">Envie uma mensagem</h3>
+          <p class="form-desc">
+            Preencha o formulário e entraremos em contato o mais rápido
+            possível.
+          </p>
+
+          <hr />
+
+          <form action="#" method="get">
+            <div class="form-grupo">
+              <label for="nome">Nome</label><br />
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="email">E-mail</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-grupo">
+              <label for="assunto">Assunto</label><br />
+              <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione o assunto</option>
+                <option>Dúvida sobre treinos</option>
+                <option>Dúvida sobre nutrição</option>
+                <option>Sugestão de conteúdo</option>
+                <option>Parceria ou colaboração</option>
+                <option>Outro</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label for="mensagem">Mensagem</label><br />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">ENVIAR MENSAGEM</button>
+          </form>
+        </div>
+      </article>
+
+      <!-- DIV: container da seção de perguntas frequentes -->
+      <div class="faq">
+        <h2 class="faq-titulo">Perguntas Frequentes</h2>
+        <hr />
+
+        <!-- ol + li: lista ORDENADA para as perguntas frequentes -->
+        <ol class="faq-lista">
+          <li class="faq-item">
+            <p><strong>O conteúdo do TOPFIT é gratuito?</strong></p>
+            <p>
+              Sim! Todo o conteúdo disponível no site é 100% gratuito. Nossa
+              missão é democratizar o acesso a informações de qualidade sobre
+              saúde e fitness.
+            </p>
+          </li>
+
+          <li class="faq-item">
+            <p>
+              <strong
+                >Os treinos são adequados para iniciantes absolutos?</strong
+              >
+            </p>
+            <p>
+              Sim. Temos protocolos desenhados para quem nunca treinou antes.
+              Recomendamos começar pelo <em>Cardio Hiit</em> e progredir
+              conforme a adaptação do seu corpo.
+            </p>
+          </li>
+
+          <li class="faq-item">
+            <p><strong>Vocês oferecem consultoria personalizada?</strong></p>
+            <p>
+              No momento não oferecemos consultoria individual. Recomendamos
+              buscar um personal trainer ou nutricionista esportivo.
+            </p>
+          </li>
+
+          <li class="faq-item">
+            <p>
+              <strong>Como posso contribuir com conteúdo para o blog?</strong>
+            </p>
+            <p>
+              Adoramos colaborações! Se você é profissional da área, envie uma
+              proposta pelo formulário acima selecionando
+              <em>Parceria ou colaboração</em>.
+            </p>
+          </li>
+
+          <li class="faq-item">
+            <p>
+              <strong>Com que frequência vocês publicam conteúdo novo?</strong>
+            </p>
+            <p>
+              Publicamos pelo menos 2 artigos novos por semana e atualizamos
+              nossa seção de treinos e receitas mensalmente.
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- IFRAME: incorpora conteúdo externo (mapa) dentro da página -->
+      <div class="mapa">
+        <h2 class="mapa-titulo">Onde estamos</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59489.49!2d-46.9915!3d-20.9178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0cfa2977e5555%3A0xa89c70bc56a5d62a!2sS%C3%A3o%20Sebasti%C3%A3o%20do%20Para%C3%ADso%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1713200000000"
+          width="100%"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          title="Mapa de localização - São Sebastião do Paraíso"
+        >
+        </iframe>
+      </div>
+    </main>
+
+    <!-- FOOTER: elemento semântico que marca o rodapé da página -->
+    <footer>
+      <p>
+        &#128205; Av. Wenceslau Braz, 1018 - Lagoinha &mdash; São Sebastião do
+        Paraíso, MG
+      </p>
+      <p>&#128222; (35) 99999-9999</p>
+      <p>
+        <small>&#169; 2026 POWERFIT &mdash; Todos os direitos reservados</small>
+      </p>
+    </footer>
+  </body>
+</html>
